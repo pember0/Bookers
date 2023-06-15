@@ -1,0 +1,19 @@
+<!--詳細画面-->
+<div>
+  <%= flash[:notice] %>　<!--投稿時のメッセージ-->
+</div>
+
+<p>
+  <b>Title:</b>       <!--タイトル-->
+  <%= @book.title %>   <!--title文-->
+</p>
+
+<p>
+  <b>Body:</b>        <!--タイトル-->
+  <%= @book.body %>    <!--body文-->
+</p>
+
+<!--更新画面のリンク -->
+<%= link_to "edit", edit_book_path(@book.id) %>
+<!--一覧画面のリンク -->
+<%= link_to "back", books_path %>
