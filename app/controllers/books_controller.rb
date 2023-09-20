@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def new
     # Viewへ渡すためのインスタンス変数に空のModelオブジェクトを生成する。
-    @books = Book.new
+    @book = Book.new
   end
 
   def create
